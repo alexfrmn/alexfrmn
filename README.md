@@ -14,17 +14,13 @@
 
 ### What I'm building
 
-**[Murmur](https://github.com/alexfrmn/murmur)**
-Encrypted agent-to-agent messaging bus. MCP-native, XChaCha20-Poly1305, NATS transport with JetStream durability, cross-host and cross-org federation. Claude Code and Codex talking to each other across machines.
+**[Murmur](https://github.com/alexfrmn/murmur)** — encrypted agent-to-agent messaging bus. MCP-native, XChaCha20-Poly1305, NATS transport with JetStream durability, cross-host and cross-org federation. Claude Code and Codex talking to each other across machines.
 
-**[ptylon](https://github.com/alexfrmn/ptylon)**
-Self-hosted browser terminal workspace for coding agents — persistent sessions, a browser they can drive, files and editor, from any device.
+**[ptylon](https://github.com/alexfrmn/ptylon)** — self-hosted browser terminal workspace for coding agents — persistent sessions, a browser they can drive, files and editor, from any device.
 
-**[clawdigest-mcp](https://github.com/alexfrmn/clawdigest-mcp)**
-MCP server for the ClawDigest news aggregator.
+**[clawdigest-mcp](https://github.com/alexfrmn/clawdigest-mcp)** — MCP server for the ClawDigest news aggregator.
 
-**[ruswitch](https://github.com/alexfrmn/ruswitch)**
-Punto Switcher alternative — automatic RU/EN layout switching for Windows.
+**[ruswitch](https://github.com/alexfrmn/ruswitch)** — Punto Switcher alternative — automatic RU/EN layout switching for Windows.
 
 </td>
 <td valign="top" width="48%">

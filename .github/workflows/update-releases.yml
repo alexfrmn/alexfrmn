@@ -1,0 +1,55 @@
+name: Update releases
+
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build releases block
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import json, subprocess, re
+
+          repos = ["murmur", "ptylon", "clawdigest-mcp", "ruswitch", "infralearn"]
+          rows = []
+          for r in repos:
+              out = subprocess.run(
+                  ["gh", "api", f"repos/alexfrmn/{r}/releases?per_page=3",
+                   "--jq", '[.[] | {tag: .tag_name, url: .html_url, date: .published_at}]'],
+                  capture_output=True, text=True)
+              if out.returncode != 0:
+                  continue
+              for rel in json.loads(out.stdout or "[]"):
+                  rows.append((rel["date"], r, rel["tag"], rel["url"]))
+
+          rows.sort(reverse=True)
+          if rows:
+              block = "\n".join(
+                  f"[{repo} {tag}]({url}) — {date[:10]}  " for date, repo, tag, url in rows[:6])
+          else:
+              block = "_no releases yet_"
+
+          readme = open("README.md", encoding="utf-8").read()
+          readme = re.sub(
+              r"<!-- releases starts -->.*<!-- releases ends -->",
+              f"<!-- releases starts -->\n{block}\n<!-- releases ends -->",
+              readme, flags=re.S)
+          open("README.md", "w", encoding="utf-8").write(readme)
+          PY
+      - name: Commit
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --quiet --cached || git commit -m "Update releases"
+          git push
