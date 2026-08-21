@@ -6,7 +6,7 @@
 
 18 years in enterprise IT — service desk → DevOps/PlatOps → technical director. Now building open-source infrastructure for AI coding agents, and running AI systems in production for companies that still have real racks in real datacenters.
 
-**[zakaz.su](https://zakaz.su)** · **[@sys_adm](https://t.me/sys_adm)**
+**[zakaz.su](https://zakaz.su)** · **[LinkedIn](https://www.linkedin.com/in/alexvasiliev-infra/)** · **[@sys_adm](https://t.me/sys_adm)**
 
 <table>
 <tr>
