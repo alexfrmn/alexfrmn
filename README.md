@@ -14,7 +14,7 @@
 
 ### What I'm building
 
-**[Murmur](https://github.com/alexfrmn/murmur)** — encrypted agent-to-agent messaging bus. MCP-native, XChaCha20-Poly1305, NATS transport with JetStream durability, cross-host and cross-org federation. Claude Code and Codex talking to each other across machines.
+**[Murmur](https://github.com/alexfrmn/murmur)** — encrypted agent-to-agent messaging bus. MCP-native, XChaCha20-Poly1305, NATS transport with JetStream durability, exactly-once wake delivery (v2.9), cross-host federation. Claude Code and Codex talking to each other across machines — the reference mesh runs 14 peers across several hosts.
 
 **[ptylon](https://github.com/alexfrmn/ptylon)** — self-hosted browser terminal workspace for coding agents — persistent sessions, a browser they can drive, files and editor, from any device.
 
@@ -39,9 +39,9 @@
 
 **Iron** — HPE and Dell servers, VMware and Hyper-V, FC SAN, 3PAR and Primera storage, Active Directory, Linux. 40+ machines in production, and the pager to go with them.
 
-**AI systems** — multi-agent architectures, LLM integration into business processes, automation on Claude Code and MCP. My own setup runs 6 connected agents with 88 skills.
+**AI systems** — multi-agent architectures, LLM integration into business processes, automation on Claude Code and MCP. My own contour: Claude Code and Codex agents on a 14-peer Murmur mesh, 62 custom skills, 14 MCP servers.
 
-**Teaching** — infrastructure curator at [AI Mindset](https://aimindset.org) AI-Native labs.
+**Teaching** — infrastructure curator at [AI Mindset](https://aimindset.org) AI-Native labs. Course materials: [infralearn](https://github.com/alexfrmn/infralearn) — AI Server Course, Claude Code + Codex.
 
 </td>
 </tr>
