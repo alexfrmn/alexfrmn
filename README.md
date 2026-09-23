@@ -14,7 +14,7 @@
 
 ### What I'm building
 
-**[Murmur](https://github.com/alexfrmn/murmur)** — encrypted agent-to-agent messaging bus. MCP-native, XChaCha20-Poly1305, NATS transport with JetStream durability, exactly-once wake delivery (v2.9), cross-host federation. Claude Code and Codex talking to each other across machines — the reference mesh runs 14 peers across several hosts.
+**[Murmur](https://murmurconnect.com)** ([GitHub](https://github.com/alexfrmn/murmur)) — encrypted agent-to-agent messaging bus. MCP-native, XChaCha20-Poly1305, NATS transport with JetStream durability, exactly-once wake delivery (v2.9), cross-host federation. Claude Code and Codex talking to each other across machines — the reference mesh runs 14 peers across several hosts.
 
 **[ptylon](https://github.com/alexfrmn/ptylon)** — self-hosted browser terminal workspace for coding agents — persistent sessions, a browser they can drive, files and editor, from any device.
 
