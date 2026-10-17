@@ -27,9 +27,9 @@
 
 ### Recent releases
 <!-- releases starts -->
+[murmur v2.12.1](https://github.com/alexfrmn/murmur/releases/tag/v2.12.1) — 2026-10-17  
 [murmur v2.12.0](https://github.com/alexfrmn/murmur/releases/tag/v2.12.0) — 2026-09-28  
 [murmur v2.12.0-rc5](https://github.com/alexfrmn/murmur/releases/tag/v2.12.0-rc5) — 2026-09-28  
-[murmur v2.12.0-rc4](https://github.com/alexfrmn/murmur/releases/tag/v2.12.0-rc4) — 2026-09-25  
 [ptylon v1.0.0](https://github.com/alexfrmn/ptylon/releases/tag/v1.0.0) — 2026-07-13  
 [ptylon v0.1.1](https://github.com/alexfrmn/ptylon/releases/tag/v0.1.1) — 2026-07-13  
 [ptylon v0.1.0](https://github.com/alexfrmn/ptylon/releases/tag/v0.1.0) — 2026-07-13  
